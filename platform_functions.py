@@ -155,8 +155,7 @@ def get_leads_info_in_training(training, leads_idx):
 @st.cache(allow_output_mutation=True)
 def load_datasets():
     # Market Dataset with original categories - for plots
-    market_info = pd.read_csv('processed_data/market_analyzed.csv',
-                              usecols=['id','sg_uf_matriz','nm_divisao','de_faixa_faturamento_estimado'],encoding='latin-1').set_index('id',drop=True)
+    market_info = pd.read_csv('processed_data/market_analyzed.csv',sep=',',usecols=['id','sg_uf_matriz','nm_divisao','de_faixa_faturamento_estimado'],encoding='latin-1').set_index('id',drop=True)
     # Market Processed - To process (2) Similarity
     training = pd.read_csv('processed_data/market_transformed_processed_featSelected_std.csv', index_col='id')
     return market_info, training
