@@ -3,7 +3,7 @@
 Um sistema de recomendações para portfólios de empresas!
 
 ## Conhecendo a plataforma
-Para acessar a plataforma acesse o [link](https://point-leads.herokuapp.com/). Lá você irá encontrar duas páginas:
+Para acessar a plataforma acesse o [link da plataforma no Heroku](https://point-leads.herokuapp.com/). Lá você irá encontrar duas páginas:
 - **Sobre a plataforma** - Página com explicação mais técnica a respeito do sistema desenvolvido e como usa-lo.
 - **Conseguir leads!** - Página para adquirir recomendações para o portfólio da empresa. 
 
