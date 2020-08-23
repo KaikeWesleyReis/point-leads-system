@@ -81,10 +81,10 @@ def report_page():
     # 2 - Pedir quantos leads por cliente
     st.write("""
              # **Segunda etapa**
-             Insira a quantidade **N** de que deseja por cliente em seu portfólio:
+             Insira a quantidade **N** de *leads* que deseja por cliente em seu portfólio:
              """
              )
-    n_leads = st.slider("", 2, 4)
+    n_leads = st.slider("", 2, 3)
 
     # 3 - Aguardar o modelo retornar os leads
     st.write("""# **Terceira etapa**""")
@@ -120,11 +120,11 @@ def report_page():
                 st.write("""**O sistema conseguiu encontrar uma alta similaridade (abaixo de 50%) entre os *leads* e o seu portfólio. 
                          Isso indica que o seu mercado é bem heterogêneo, ou seja, seu portfólio apresenta empresas de ramos/faturamento/regiões distintas!**""")
             st.write("""## A concentração dos principais escritórios dos *leads* estão nos estados ...""")
-            platFunc.plot_bars(leads_market, 'sg_uf_matriz', fig_title='')
+            platFunc.plot_bars(leads_market['sg_uf_matriz'], fig_title='')
             st.write("""## O faturamento esperado dos *leads* encontrados ...""")
-            platFunc.plot_bars(leads_market, 'de_faixa_faturamento_estimado', fig_title='')
+            platFunc.plot_bars(leads_market['de_faixa_faturamento_estimado'], fig_title='')
             st.write("""## Os setores de atuação das empresas encontradas ...""")
-            platFunc.plot_bars(leads_market, 'nm_divisao', fig_title='')
+            platFunc.plot_bars(leads_market['nm_divisao'], fig_title='')
             st.write("""## Veja abaixo alguns dos *leads* encontrados no link abaixo:""")
             st.dataframe(leads_market)
             

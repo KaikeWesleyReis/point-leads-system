@@ -208,18 +208,18 @@ def fazer_anotacao_frequencia_relativa(eixo, coord_texto_xy, total_amostras):
         eixo.annotate(texto_barra, coord_anotacao_xy, xytext=coord_texto_xy, fontsize=25, color='black', 
                       textcoords='offset points', horizontalalignment='right',fontweight='bold')
 
-def plot_bars(data, column, fig_title='Leads'):
+def plot_bars(column, fig_title='Leads'):
     '''
     Plot Barplot for a desired column.
     '''
     fig, ax = plt.subplots(1,1, figsize=(20,30))
-    vc_data = data[column].value_counts()
+    vc_data = column.value_counts()
     # Leads
     if len(vc_data) >= 5:
         limit = 5
     else:
         limit = len(vc_data)
-    sns.countplot(y=column,data=data,order=vc_data.iloc[:limit].index,ax=ax)
+    sns.countplot(y=column,order=vc_data.iloc[:limit].index,ax=ax)
     ax.set_title(fig_title, fontsize=30,fontweight='bold')
     ax.set_ylabel('')
     ax.set_xlabel('')
@@ -228,6 +228,6 @@ def plot_bars(data, column, fig_title='Leads'):
     ax.spines['bottom'].set_visible(False)
     ax.spines['right'].set_visible(False)
     ax.yaxis.set_tick_params(labelsize=24)
-    fazer_anotacao_frequencia_relativa(ax,(140, -100),len(data))
+    fazer_anotacao_frequencia_relativa(ax,(140, -100),len(column))
     #plt.show()
     st.pyplot()
