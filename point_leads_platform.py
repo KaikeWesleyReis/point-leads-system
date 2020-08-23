@@ -84,7 +84,7 @@ def report_page():
              Insira a quantidade **N** de que deseja por cliente em seu portfólio:
              """
              )
-    n_leads = st.slider("", 2, 10)
+    n_leads = st.slider("", 2, 4)
 
     # 3 - Aguardar o modelo retornar os leads
     st.write("""# **Terceira etapa**""")
