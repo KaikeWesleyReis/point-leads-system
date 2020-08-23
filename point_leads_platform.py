@@ -48,7 +48,7 @@ def main_page():
     st.write(
         """
         ## **Outras informações**
-        Caso queira conhecer o passo a passo para a construção deste sistema e o **tutorial de uso** acesse o [repositório explicativo no github]().
+        Caso queira conhecer o passo a passo para a construção deste sistema e o **tutorial de uso** acesse o [repositório explicativo no github](https://github.com/KaikeWesleyReis/point-leads-system).
         Este repositório contém além do tutorial todo o código desde o pré-processamento até as etapas finais com a criação do modelo e *reports*.
 
         Caso queira entrar em contato com criador deste sistema:
