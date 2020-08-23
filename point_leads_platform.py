@@ -66,6 +66,10 @@ def report_page():
         """
         ## Sistema de recomendação de Leads para empresas
         Por: *Kaike Wesley Reis*
+
+        **Importante**: Acesse o [tutorial de uso hospedado no github](https://github.com/KaikeWesleyReis/point-leads-system). Além do tutorial, lá você encontra
+        o link de download para os portfólios de teste.
+
         # **Primeira etapa**
         """
         )
