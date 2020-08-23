@@ -65,7 +65,7 @@ def report_page():
     st.write(
         """
         ## Sistema de recomendação de Leads para empresas
-
+        Por: *Kaike Wesley Reis*
         # **Primeira etapa**
         """
         )
