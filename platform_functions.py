@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import base64
 import joblib
 import numpy as np
 import pandas as pd
@@ -166,19 +165,6 @@ def load_datasets():
 def load_recommender_model():
     rm = joblib.load('models/NN-5-l2DistanceNormalizedPlataform.sav')
     return rm
-
-def get_table_download_link(df):
-    """Generates a link allowing the data in a given panda dataframe to be downloaded
-    in:  dataframe
-    out: href string
-    """
-    csv = df.to_csv(encoding='utf-8')
-    b64 = base64.b64encode(csv.encode())
-    payload = b64.decode()
-    link = "data:text/csv;base64,{payload}"
-    link = link.format(payload=payload)
-    href = f'<a href={link}>Download csv file</a>'
-    return href
 
 # Plot functions
 def plot_portfolio_market_pie_similarity(X,Y,threshold=0.70):
