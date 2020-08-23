@@ -4,8 +4,8 @@ Um sistema de recomendações para portfólios de empresas!
 
 ## Conhecendo a plataforma
 Para acessar a plataforma acesse o [link](). Lá você irá encontrar duas páginas:
-- **Sobre a plataforma**: Página com explicação mais técnica a respeito do sistema desenvolvido e como usa-lo.
-- **Conseguir leads!**: Página para adquirir recomendações para o portfólio da empresa. 
+- **Sobre a plataforma** - Página com explicação mais técnica a respeito do sistema desenvolvido e como usa-lo.
+- **Conseguir leads!** - Página para adquirir recomendações para o portfólio da empresa. 
 
 A seção abaixo trás um tutorial de como utilizar o sistema.
 
