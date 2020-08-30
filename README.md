@@ -33,3 +33,4 @@ Não foi inserido os links originais das planilhas de mercado e ortfólios nesse
 - [estaticos_portfolio1.csv](https://codenation-challenges.s3-us-west-1.amazonaws.com/ml-leads/estaticos_portfolio1.csv)
 - [estaticos_portfolio2.csv](https://codenation-challenges.s3-us-west-1.amazonaws.com/ml-leads/estaticos_portfolio2.csv)
 - [estaticos_portfolio3.csv](https://codenation-challenges.s3-us-west-1.amazonaws.com/ml-leads/estaticos_portfolio3.csv)
+- [descrição das variáveis da base de dados](https://s3-us-west-1.amazonaws.com/codenation-challenges/ml-leads/features_dictionary.pdf)
