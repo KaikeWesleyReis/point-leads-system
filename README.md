@@ -1,6 +1,6 @@
 # *Point Leads*
 ![iconREADME](https://user-images.githubusercontent.com/32513366/90978551-1e1d2a80-e525-11ea-9e37-ad4b710fa5b8.PNG)
-Um sistema de recomendações para portfólios de empresas!
+Um sistema de recomendações para portfólios de empresas no mercado!
 
 ## Conhecendo a plataforma
 Para acessar a plataforma acesse o [link da plataforma no Heroku](https://point-leads.herokuapp.com/). Após carregar (pode demorar um pouco), você irá encontrar duas páginas:
